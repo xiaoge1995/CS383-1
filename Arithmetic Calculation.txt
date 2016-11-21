@@ -1,0 +1,9 @@
+Michael Osorio
+
+
+mov r5, r2
+add r5, r3
+ldi r10, 2
+sub r10, r5
+mul r2, r10
+mov r4, r0

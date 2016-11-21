@@ -1,0 +1,35 @@
+Michael Osorio
+Assembly_10 quiz
+
+.include "m328Pdef.inc"
+main:
+ldi r16, low(RAMEND)
+out Spl, r16
+ldi r16, high(RAMEND)
+out sph, r16
+
+ldi r16, $33
+ldi r17 $25
+ldi r18, $12
+ldi r19, $16
+
+push r16
+push r17
+push r18
+push r19
+pop r19
+pop r18
+pop r17
+pop r16
+push r19
+push r18
+push r17
+push r16
+
+out PORTB, r16
+out PORTB, r17
+out PORTB, r18
+out PORTB, r19
+
+end:
+ret
